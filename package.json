@@ -1,0 +1,26 @@
+{
+  "name": "devstree-chat-app",
+  "version": "1.0.0",
+  "description": "This is a web app which is used to chat ",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd server && npm && cd ../client && npm && npm run build",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.devstree.com/burhanuddin.devstree/devstree-chat-app"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://git.devstree.com/burhanuddin.devstree/devstree-chat-app/issues"
+  },
+  "homepage": "https://git.devstree.com/burhanuddin.devstree/devstree-chat-app#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "global": "^4.4.0"
+  }
+}
